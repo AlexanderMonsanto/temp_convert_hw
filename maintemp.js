@@ -8,20 +8,14 @@ document.addEventListener('DOMContentLoaded',function() {
 
   button1.addEventListener('click',function() {
     var temp = document.querySelector(".temp").value;
-    console.log(temp);
     var C = tempConv(temp);
-    console.log(C);
     document.getElementById('output').value = C;
   });
 
   button2.addEventListener('click',function() {
-    alert("HERE")
-    var tempClear = document.querySelector(".temp").value;
-    var D = tempConv(tempClear);
-    //console.log(C);
-    tempClear = "";
-    document.querySelector(".temp").value = D
-    document.getElementById('output').value = D;
+    var tempClear = "";
+    document.querySelector(".temp").value = tempClear;
+    document.getElementById('output').value = tempClear;
   });
 
 });
